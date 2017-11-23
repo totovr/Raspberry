@@ -37,7 +37,7 @@ Alternative Software:
 
   Select the image of Xelenial that you download previously (I supposed that you already insert the SD card), chose the SD Card and Flash!
 
-<img src="https://github.com/totovr/Raspberry/blob/master/Images/resion.png" width="250">
+<img src="https://github.com/totovr/Raspberry/blob/master/Images/resion.png" width="750">
 
   3. Once [ETCHER](https://etcher.io/) end to write the image in the micro SD card you are ready to insert it in the Raspberry and start to configure it as a new toy!
 
