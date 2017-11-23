@@ -1,10 +1,10 @@
-# Processing
+# Raspberry
 
-Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping.
+The Raspberry Pi is slower than a modern laptop or desktop but is still a complete Linux computer and can provide all the expected abilities that implies, at a low-power consumption level.
 
-for more information check the [Processing](https://processing.org/reference/)
+For more information check the [Raspberry.org](https://www.raspberrypi.org/education/)
 
-This repository contains programs for different applications in Processing 3.3.6
+This repository contains programs for different applications in Ubuntu Xelenial and Processing 3.3.6
 
 ## Getting Started
 
@@ -12,46 +12,39 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Processing IDE
-* A computer with OSX, Windows, Linux
+* [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/#buy-now-modal)
+* Micro SD card of 16 (at least)
+* A monitor with an HDMI interface
+* An HDMI cable
+* A USB keyboard
+* An Ubuntu Core image
+* SD card reader (just in case that your computer has not)
+* A computer with OSX, Windows, Linux (To save the OS image in the SD card)
 
-Alternative:
+Alternative Hardware:
 
 * Kinect V1
-* Arduino IDE
-* Arduino board
+
+Alternative Software:
+
+* Processing
 
 ### Installing
 
-Install the Processing 3.3.6 IDE, you can download it from this page:
+  1. Download Xelenial image, you can download it from this page [Xelenial for Raspberrypi](http://cdimage.ubuntu.com/ubuntu-core/16/stable/current/ubuntu-core-16-pi3.img.xz)
 
-* [Processing IDE](https://processing.org/download/)
+  2. Because I have just Mac to install the image, I will use [ETCHER](https://etcher.io/) to write the SO image in the sd card, but also this software is supported for Windows and Linux.
 
-For OSX you just need to unzip the folder and paste the App in the applications folder.
+  Select the image of Xelenial that you download previously (I supposed that you already insert the SD card), chose the SD Card and Flash!
 
-## Test a program sample:
+<img src="https://github.com/totovr/Raspberry/blob/master/Images/resion.png" width="250">
 
-Open Processing IDE and upload the next example:
-```
-void setup() {
-  size(480, 120); //Create a window of 480*120
-}
+  3. Once [ETCHER](https://etcher.io/) end to write the image in the micro SD card you are ready to insert it in the Raspberry and start to configure it as a new toy!
 
-void draw() {
-  if (mousePressed) {
-    fill(0);
-    } else {
-      fill(255);
-    }
-    ellipse(mouseX, mouseY, 80, 80); //If we pressed the mouse a Ellipse will be draw
-}
-```
-This is one simple example of how to draw a Ellipse in the sketch window.
+## Also you can use the next software write the image in the micro SD:
 
-## Also you can use the next IDE to build programs:
-
-* [Processing Online Editor](http://js.do/blog/processing/editor/)
-* [Atom](https://atom.io/)
+* [Pendrivelinux](https://www.pendrivelinux.com/) (For windows and Linux)
+* [Partition Wizard](http://www.partitionwizard.jp/index.html) (For Windows)
 
 ## Contributing
 
@@ -71,7 +64,3 @@ Antonio Vega Ramirez:
 ## License
 
 This project is licensed under CC License - see the [LICENSE.md](https://creativecommons.org/licenses/by/4.0/) file for details
-
-### The instructions to Setup the Kinect are written for Mac OS High Sierra users.
-
-![Deep](https://github.com/totovr/Processing/blob/master/Images/deep.png)
