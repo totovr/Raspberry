@@ -1,8 +1,6 @@
-# Raspberry
+# Open Kinect for ARM6
 
-The Raspberry Pi is slower than a modern laptop or desktop but is still a complete Linux computer and can provide all the expected abilities that implies, at a low-power consumption level.
-
-For more information check the [Raspberry.org](https://www.raspberrypi.org/education/)
+For more information check the Github of [Shiffman](https://github.com/shiffman/OpenKinect-for-Processing)
 
 This repository contains programs for different applications in Ubuntu Xelenial and Processing 3.3.6
 
@@ -13,38 +11,31 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 * [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/#buy-now-modal)
-* Micro SD card of 16 (at least)
-* A monitor with an HDMI interface
-* An HDMI cable
-* A USB keyboard
-* An Ubuntu Core image
-* SD card reader (just in case that your computer has not)
-* A computer with OSX, Windows, Linux (To save the OS image in the SD card)
 
-Alternative Hardware:
+I will supposed that you already setup all the system if you did not check this [README.dm](https://github.com/totovr/Raspberry/blob/master/README.md)
 
 * Kinect V1
 
-Alternative Software:
+* [Processing 3.3.6 for ARM6](http://download.processing.org/processing-3.3.6-linux-armv6hf.tgz)
 
-* Processing
+  Also you can install it running the next command:
 
-### Installing
+      curl https://processing.org/download/install-arm.sh | sudo sh
 
-  1. Download Xelenial image, you can download it from this page [Xelenial for Raspberrypi](http://cdimage.ubuntu.com/ubuntu-core/16/stable/current/ubuntu-core-16-pi3.img.xz)
 
-  2. Because I have just Mac to install the image, I will use [ETCHER](https://etcher.io/) to write the SO image in the sd card, but also this software is supported for Windows and Linux.
+### Installing the library
 
-  Select the image of Xelenial that you download previously (I supposed that you already insert the SD card), chose the SD Card and Flash!
+  1. Download the [OpenKinect library for ARM6](https://github.com/totovr/Raspberry/archive/OpenKinect.zip)
 
-<img src="https://github.com/totovr/Raspberry/blob/master/Images/resion.png" width="750">
+  2. Unzip it and past it inside of:
 
-  3. Once [ETCHER](https://etcher.io/) end to write the image in the micro SD card you are ready to insert it in the Raspberry and start to configure it as a new toy!
+    /home/"your user"/sketchbook/libraries
 
-## Also you can use the next software write the image in the micro SD:
+  3. Add the next [51-kinect.rules](https://github.com/totovr/Raspberry/blob/OpenKinect/51-kinect.rules) in:
 
-* [Pendrivelinux](https://www.pendrivelinux.com/) (For windows and Linux)
-* [Partition Wizard](http://www.partitionwizard.jp/index.html) (For Windows)
+    /etc/udev/rules.d
+
+## Run one example of the library
 
 ## Contributing
 
@@ -55,6 +46,10 @@ Please read [CONTRIBUTING.md](https://github.com/totovr/Processing/blob/master/C
 I use [SemVer](http://semver.org/) for versioning.
 
 ## Author
+
+[Processing](https://github.com/processing/processing/wiki/Supported-Platforms#library-openkinect)
+
+## Suporter
 
 Antonio Vega Ramirez:
 
