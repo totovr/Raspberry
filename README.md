@@ -63,4 +63,4 @@ Antonio Vega Ramirez:
 
 ## License
 
-This project is licensed under The MIT License (MIT) see the [LICENSE.md](https://github.com/totovr/Raspberry/blob/master/LICENSE.md) file for details
+This project is licensed under The MIT License (MIT) - see the [LICENSE.md](https://github.com/totovr/Raspberry/blob/master/LICENSE.md) file for details
