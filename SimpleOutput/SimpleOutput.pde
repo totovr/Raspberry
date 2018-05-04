@@ -2,7 +2,7 @@ import processing.io.*;
 boolean ledOn = false;
 
 // GPIO numbers refer to different phyiscal pins on various boards
-// On the Raspberry Pi GPIO 4 is physical pin 7 on the header
+// On the Raspberry Pi GPIO 17 is physical pin 11 on the header
 // see setup.png in the sketch folder for wiring details
 
 void setup() {
